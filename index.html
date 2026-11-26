@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Invisibles</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;600;800&family=Big+Shoulders+Display:wght@700;800;900&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="bar">
+  <a class="brand" href="#top">INVISIBLES</a>
+  <nav aria-label="Capítulos">
+    <a href="#drew" data-s="drew"><b>01</b><span>Drew</span></a>
+    <a href="#brown" data-s="brown"><b>02</b><span>Brown</span></a>
+    <a href="#reflexion" data-s="reflexion"><b>03</b><span>Reflexión</span></a>
+    <a href="#juega" data-s="juega"><b>04</b><span>Juega</span></a>
+    <a href="#cierre" data-s="cierre"><b>05</b><span>Cierre</span></a>
+  </nav>
+  <div class="pct"><span id="pct">000</span>%</div>
+  <i id="barfill"></i>
+</header>
+
+<main>
+<!-- HERO -->
+<section class="hero" id="top" data-c="oro">
+  <div class="field" aria-hidden="true" id="field"></div>
+  <div class="hero-copy">
+    <p class="mono">Historia y cultura del Pacífico colombiano · Parcial 3</p>
+    <h1>Invisibles</h1>
+    <p class="lede">Dos inventos de personas afro que usas sin saberlo. Mueve la luz y mira qué se esconde.</p>
+    <a class="cta" href="#drew">Empezar ↓</a>
+  </div>
+</section>
+
+<div class="stripe" aria-hidden="true"></div>
+<div class="ticker" aria-hidden="true"><div class="tk" id="tk"></div></div>
+<div class="ticker t2" aria-hidden="true"><div class="tk" id="tk2"></div></div>
+
+<!-- 01 DREW -->
+<section id="drew" data-c="rojo" style="--c:var(--rojo)">
+  <header class="ch-head rv">
+    <p class="mono">01 · Bancos de sangre y preservación de plasma</p>
+    <h2><span class="o">01</span>Charles Richard Drew</h2>
+    <p class="sub">Un médico que convirtió la sangre en algo que se puede guardar, mover y compartir.</p>
+  </header>
+  <div class="scrolly">
+    <div class="stage-col">
+      <div class="stage" id="stage-drew" data-step="1">
+        <div class="hud"><span>Fig. 01 · Drew</span><span><b class="si">1</b> / 5</span></div>
+
+        <div class="panel on">
+          <div class="row">
+            <div class="slot" data-src="img/drew-retrato.jpg" data-ar="4/5" data-pos="50% 25%" data-alt="Retrato de Charles Richard Drew" data-cap="Charles R. Drew "></div>
+            <div class="col"><div class="big-year" data-roll="1904">1904</div><p class="mono">3 de junio<br>Washington, D. C.</p></div>
+          </div>
+          <ul class="chips"><li>Fútbol americano</li><li>Baloncesto</li><li>Béisbol</li><li>Atletismo</li></ul>
+        </div>
+
+        <div class="panel">
+          <ol class="way">
+            <li><b>Washington, D. C.</b><span>1904 · Dunbar High School</span></li>
+            <li><b>Amherst College</b><span>Beca deportiva · hostilidad racial</span></li>
+            <li><b>Baltimore</b><span>Morgan College · 2 años ahorrando</span></li>
+            <li><b>Montreal</b><span>McGill · 1928–1933 · MD y CM</span></li>
+            <li><b>Nueva York</b><span>Columbia · 1938–1940 · doctorado</span></li>
+          </ol>
+        </div>
+
+        <div class="panel">
+          <div class="sepbox">
+            <svg viewBox="0 0 320 340" role="img" aria-label="Tubo con sangre que se separa en plasma y glóbulos rojos">
+              <defs><clipPath id="tube"><path d="M70 20H170V270A50 50 0 0 1 70 270Z"/></clipPath></defs>
+              <g clip-path="url(#tube)">
+                <rect x="60" y="70" width="120" height="270" fill="#b3231b"/>
+                <rect id="cells" x="60" y="70" width="120" height="270" fill="#650e0a" style="opacity:0"/>
+                <rect id="plasma" x="60" y="70" width="120" height="0" fill="#f0c75e" style="opacity:.2"/>
+              </g>
+              <path d="M70 20H170V270A50 50 0 0 1 70 270Z" fill="none" stroke="#fff4dc" stroke-width="3" stroke-opacity=".7"/>
+              <line x1="62" y1="20" x2="178" y2="20" stroke="#fff4dc" stroke-width="4" stroke-opacity=".7"/>
+              <text id="lblPlasma" x="184" y="100" class="t" style="opacity:0;fill:#f0c75e">Plasma</text>
+              <text id="lblCells" x="184" y="220" class="t" style="opacity:0;fill:#ff7a6e">Glóbulos rojos</text>
+            </svg>
+            <div class="oks" id="sepOk"><span>Dura más</span><span>Contra el choque</span><span>Sin emparejar grupo ya</span></div>
+            <label for="sepRange">Separar la sangre<input type="range" id="sepRange" min="0" max="100" value="0"></label>
+          </div>
+        </div>
+
+        <div class="panel">
+          <div class="nums">
+            <div><b class="count" data-to="14500">0</b><span>donaciones</span></div>
+            <div><b class="count" data-to="5000" data-suffix=" L">0</b><span>litros de plasma, aprox.</span></div>
+          </div>
+          <div class="slot wide" data-src="img/drew-banco-de-sangre.jpg" data-ar="16/9" data-pos="50% 30%" data-alt="Banco de sangre o unidad móvil de recolección" data-cap="Banco de sangre "></div>
+          <p class="mono">Blood for Britain · Nueva York</p>
+        </div>
+
+        <div class="panel">
+          <p class="mono">Dos donaciones. Una pregunta.</p>
+          <div class="drops" id="drops">
+            <button class="drop" type="button" aria-label="Donación A"><svg viewBox="0 0 100 140"><path d="M50 6C50 6 12 58 12 92a38 38 0 0 0 76 0C88 58 50 6 50 6Z" fill="#e5372b"/><path d="M30 92a20 20 0 0 0 14 19" stroke="#fff" stroke-opacity=".5" stroke-width="5" fill="none" stroke-linecap="round"/></svg>Donación A</button>
+            <button class="drop" type="button" aria-label="Donación B"><svg viewBox="0 0 100 140"><path d="M50 6C50 6 12 58 12 92a38 38 0 0 0 76 0C88 58 50 6 50 6Z" fill="#e5372b"/><path d="M30 92a20 20 0 0 0 14 19" stroke="#fff" stroke-opacity=".5" stroke-width="5" fill="none" stroke-linecap="round"/></svg>Donación B</button>
+          </div>
+          <p class="reveal" id="dropMsg" aria-live="polite">¿Cuál viene de una persona negra? Toca una.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="steps">
+      <article class="step on" data-i="1"><div class="card">
+        <p class="k">1904 · el origen</p>
+        <h3>El mayor de cinco</h3>
+        <p>Estrella deportiva de Dunbar High School. La muerte de su hermana Elsie en 1918 y una lesión de fútbol americano lo empujaron a la medicina.</p>
+      </div></article>
+      <article class="step" data-i="2"><div class="card">
+        <p class="k">La formación</p>
+        <h3>Si la puerta se cierra, cruza la frontera</h3>
+        <p>Muchas facultades de medicina de EE. UU. segregaban. Estudió en McGill (Canadá) y en 1940 fue el primer afrodescendiente con Doctor of Medical Science en Columbia.</p>
+      </div></article>
+      <article class="step" data-i="3"><div class="card">
+        <p class="k">La clave</p>
+        <h3>Separar el plasma</h3>
+        <p>La sangre total se echa a perder rápido. El plasma se separa, dura más y sirve contra el choque. Todo quedó en su tesis de 1940, <i>Banked Blood</i>.</p>
+        <p class="hint">Mueve el control del escenario →</p>
+      </div></article>
+      <article class="step" data-i="4"><div class="card">
+        <p class="k">Segunda Guerra Mundial</p>
+        <h3>Blood for Britain</h3>
+        <p>Dirigió el proyecto desde Nueva York: donantes, pruebas y envío de plasma. Después ayudó a armar los bancos de sangre de la Cruz Roja y las unidades móviles.</p>
+      </div></article>
+      <article class="step" data-i="5"><div class="card">
+        <p class="k">La decisión ética</p>
+        <h3>La sangre no tiene raza</h3>
+        <p>Cuando la Cruz Roja y las fuerzas armadas separaron la sangre por raza, sin base científica, Drew renunció. Siguió como cirujano y formador de residentes.</p>
+      </div></article>
+    </div>
+  </div>
+</section>
+
+<!-- 02 BROWN -->
+<section id="brown" data-c="verde" style="--c:var(--verde)">
+  <header class="ch-head rv">
+    <p class="mono">02 · Sistema de seguridad del hogar</p>
+    <h2><span class="o">02</span>Marie Van Brittan Brown</h2>
+    <p class="sub">Una enfermera de Queens que vio llegar a la puerta de su casa el futuro de la seguridad.</p>
+  </header>
+  <div class="scrolly">
+    <div class="stage-col">
+      <div class="stage" id="stage-brown" data-step="1">
+        <div class="hud"><span>Fig. 02 · Brown</span><span><b class="si">1</b> / 5</span></div>
+
+        <div class="panel on">
+          <div class="row">
+            <div class="slot" data-src="img/brown-retrato.jpg" data-ar="4/5" data-pos="42% 30%" data-alt="Retrato de Marie Van Brittan Brown" data-cap="Marie Van Brittan Brown "></div>
+            <div class="col"><div class="big-year" data-roll="1922">1922</div><p class="mono">Jamaica, Queens</p><ul class="chips"><li>Enfermera</li><li>Turnos largos</li><li>Albert, técnico electrónico</li></ul></div>
+          </div>
+        </div>
+
+        <div class="panel">
+          <svg viewBox="0 0 520 340" role="img" aria-label="Una mirilla fija no sirve para todas las estaturas">
+            <rect class="dim" x="200" y="20" width="120" height="300"/>
+            <circle class="f" cx="300" cy="190" r="6"/>
+            <circle class="s" cx="260" cy="100" r="8"/>
+            <circle class="f" cx="260" cy="100" r="3"/>
+            <circle class="sb" cx="60" cy="76" r="17"/><rect class="sb" x="34" y="98" width="52" height="232" rx="22"/>
+            <line class="s" x1="76" y1="76" x2="252" y2="99" stroke-dasharray="6 6"/>
+            <text x="150" y="70" class="t" style="fill:#58c27d">sí alcanza</text>
+            <circle class="sb" cx="140" cy="196" r="14"/><rect class="sb" x="118" y="214" width="44" height="116" rx="18"/>
+            <line x1="152" y1="190" x2="252" y2="104" stroke="#e5372b" stroke-width="2" stroke-dasharray="6 6"/>
+            <text x="190" y="170" class="t" style="fill:#e5372b">no alcanza</text>
+            <text x="415" y="230" font-family="Big Shoulders Display,Impact,sans-serif" font-weight="900" font-size="170" fill="#19c25d" text-anchor="middle">?</text>
+          </svg>
+          <ul class="chips"><li>Una mirilla fija</li><li>Muchas estaturas</li></ul>
+        </div>
+
+        <div class="panel">
+          <div class="diagram" id="diagram" data-hl="1">
+            <svg viewBox="0 0 560 400" role="img" aria-label="Puerta con varias mirillas, cámara que sube y baja, monitor, micrófono, cerradura y alarma">
+              <g data-g="1">
+                <rect class="dim" x="30" y="20" width="190" height="360"/>
+                <circle class="s" cx="125" cy="90" r="8"/><circle class="s" cx="125" cy="200" r="8"/><circle class="s" cx="125" cy="310" r="8"/>
+                <line class="sb" x1="125" y1="50" x2="125" y2="350" stroke-dasharray="3 5"/>
+                <g class="cam">
+                  <circle cx="125" cy="90" r="19" fill="rgba(18,11,8,.6)" stroke="#19c25d" stroke-width="3"/>
+                  <rect x="144" y="79" width="34" height="22" rx="3" fill="#19c25d"/>
+                  <circle cx="171" cy="85" r="3" fill="#e5372b"/>
+                </g>
+              </g>
+              <g data-g="2">
+                <rect class="s" x="256" y="24" width="284" height="170" rx="8"/>
+                <rect x="268" y="36" width="260" height="146" fill="#0b0605" stroke="#fff4dc" stroke-opacity=".25"/>
+                <circle cx="398" cy="92" r="16" fill="none" stroke="#19c25d" stroke-width="2.5"/><path d="M368 182C368 130 380 116 398 116S428 130 428 182" fill="none" stroke="#19c25d" stroke-width="2.5"/>
+                <text x="276" y="56" class="t" style="fill:#19c25d">CAM 1 · EN VIVO</text>
+              </g>
+              <g data-g="3">
+                <rect class="s" x="256" y="222" width="128" height="86" rx="8"/>
+                <circle class="s" cx="290" cy="252" r="12"/><rect class="s" x="284" y="266" width="12" height="22" rx="6"/>
+                <line class="sb" x1="322" y1="240" x2="366" y2="240"/><line class="sb" x1="322" y1="254" x2="366" y2="254"/><line class="sb" x1="322" y1="268" x2="366" y2="268"/><line class="sb" x1="322" y1="282" x2="366" y2="282"/>
+                <text x="256" y="328" class="t">Micrófono · altavoz</text>
+              </g>
+              <g data-g="4">
+                <rect class="s" x="402" y="222" width="138" height="86" rx="8"/>
+                <circle class="s" cx="440" cy="265" r="16"/><line class="s" x1="440" y1="265" x2="440" y2="252"/>
+                <circle cx="500" cy="265" r="19" fill="#e5372b"/>
+                <rect x="52" y="224" width="40" height="22" rx="3" fill="#19c25d"/><circle cx="60" cy="235" r="3" fill="#120b08"/>
+                <text x="402" y="328" class="t">Cerradura · alarma</text>
+              </g>
+              <path class="s flow" d="M178 90H216V100H256" stroke-width="1.5"/>
+              <path class="s flow" d="M402 296V352H72V248" stroke-width="1.5"/>
+            </svg>
+            <button class="hs hl" type="button" data-n="1" style="left:39.3%;top:22%" aria-label="Pieza 1: mirillas y cámara">1</button>
+            <button class="hs" type="button" data-n="2" style="left:96%;top:6%" aria-label="Pieza 2: monitor">2</button>
+            <button class="hs" type="button" data-n="3" style="left:68.6%;top:55.5%" aria-label="Pieza 3: micrófono y altavoz">3</button>
+            <button class="hs" type="button" data-n="4" style="left:96%;top:55.5%" aria-label="Pieza 4: cerradura y alarma">4</button>
+          </div>
+          <p class="cap" id="bCap" aria-live="polite">Varias mirillas y una cámara con motor que sube y baja por control remoto.</p>
+        </div>
+
+        <div class="panel">
+          <div class="paper">
+            <p class="pn">US3482037A</p>
+            <p class="ptt">Home security system utilizing television surveillance</p>
+            <div class="slot" data-src="img/brown-patente.png" data-ar="16/9" data-pos="50% 6%" data-alt="Dibujo de la patente US3482037A" data-cap="Dibujo de la patente US3482037A"></div>
+            <p class="pn">Inventores: Marie V. B. Brown · Albert L. Brown</p>
+            <ol>
+              <li><b>1 ago 1966</b><span>Solicitud, con el nombre de Marie al frente</span></li>
+              <li><b>2 dic 1969</b><span>Patente concedida</span></li>
+              <li><b>6 dic 1969</b><span>Lo publica The New York Times</span></li>
+            </ol>
+            <span class="stamp">Patentado</span>
+          </div>
+        </div>
+
+        <div class="panel">
+          <div class="nums" style="grid-template-columns:1fr">
+            <div><b class="count" data-to="30" data-suffix="+">0</b><span>patentes posteriores la citan</span></div>
+          </div>
+          <div class="slot wide" data-src="img/brown-videoportero.jpg" data-ar="16/9" data-alt="Videoportero moderno" data-cap="Videoportero actual "></div>
+          <ul class="chips"><li>Videoporteros</li><li>Cámaras inteligentes</li><li>Alarmas conectadas</li></ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="steps">
+      <article class="step on" data-i="1"><div class="card">
+        <p class="k">1922 · el origen</p>
+        <h3>Enfermera de turnos largos</h3>
+        <p>Vivió toda su vida en Jamaica, Queens. Su criterio práctico, más la electrónica de su esposo Albert, dieron con la solución.</p>
+      </div></article>
+      <article class="step" data-i="2"><div class="card">
+        <p class="k">El problema</p>
+        <h3>Abrir a ciegas</h3>
+        <p>En los años 60 crecía el temor a la delincuencia y la policía podía tardar. Abrir sin saber quién llamaba era un riesgo, y una mirilla no servía para todas las estaturas.</p>
+      </div></article>
+      <article class="step" data-i="3"><div class="card">
+        <p class="k">El invento</p>
+        <h3>Pieza por pieza</h3>
+        <p>Cuatro ideas en una puerta: ver, mostrar, hablar y actuar. Todo desde dentro de casa.</p>
+        <p class="hint">Toca los números del escenario →</p>
+      </div></article>
+      <article class="step" data-i="4"><div class="card">
+        <p class="k">La patente</p>
+        <h3>US3482037A</h3>
+        <p>Reconocida por el National Scientists Committee. Marie contó al Times que una mujer sola podría activar una alarma al instante.</p>
+      </div></article>
+      <article class="step" data-i="5"><div class="card">
+        <p class="k">El legado</p>
+        <h3>Sin fábrica, con herencia</h3>
+        <p>Costaba demasiado producirlo en los 60. Aun así, su patente es la base conceptual de los videoporteros y de la seguridad residencial de hoy.</p>
+      </div></article>
+    </div>
+  </div>
+</section>
+
+<!-- 03 REFLEXIÓN -->
+<section class="sect" id="reflexion" data-c="bone" style="--c:var(--oro)">
+  <p class="mono">03 · Reflexión</p>
+  <h2><span class="o">03</span>¿Y qué cambió?</h2>
+  <p class="mono lens-hint">Toca una franja para abrirla · Drew a la izquierda, Marie a la derecha</p>
+  <div class="lens" id="lens"></div>
+  <p class="juntos" style="--st:70ms">Dos historias, una lección: la innovación nace de <mark>necesidades reales</mark> y <mark>rigor técnico</mark>, aun cuando el racismo la deja sin crédito.</p>
+</section>
+
+<!-- 04 JUEGOS -->
+<section class="sect games" id="juega" data-c="oro" style="--c:var(--oro)">
+  <p class="mono">04 · Juega</p>
+  <h2><span class="o">04</span>Tu turno</h2>
+  <div class="gtabs" role="tablist" aria-label="Elegir juego">
+    <button class="gt" role="tab" type="button" id="t-g1" aria-selected="true" aria-controls="p-g1" data-g="g1"><b>A</b><span>Memoria de pares</span><em>Imágenes · 5 pares</em></button>
+    <button class="gt" role="tab" type="button" id="t-g2" aria-selected="false" aria-controls="p-g2" data-g="g2"><b>B</b><span>Rompecabezas</span><em>Desliza · 3×3</em></button>
+    <button class="gt" role="tab" type="button" id="t-g3" aria-selected="false" aria-controls="p-g3" data-g="g3"><b>C</b><span>Ordena la historia</span><em>Línea de tiempo</em></button>
+  </div>
+
+    <!-- Juego A: Memoria de pares -->
+  <div class="gp full" id="p-g1" role="tabpanel" aria-labelledby="t-g1">
+    <div class="gi">
+      <h3>Memoria de pares</h3>
+      <p>Voltea dos cartas y une cada imagen con su nombre. Menos movimientos, mejor memoria.</p>
+      <div class="hudg"><span><b id="g1m">0</b>movimientos</span><span><b id="g1c">0/5</b>pares</span></div>
+      <p class="reveal" id="g1msg" aria-live="polite" style="text-align:left;margin-top:14px"></p>
+      <button class="btn ghost" id="g1reset" type="button" style="margin-top:10px">Barajar de nuevo</button>
+    </div>
+    <div class="mem" id="mem"></div>
+  </div>
+
+  <!-- Juego B: Rompecabezas -->
+  <div class="gp" id="p-g2" role="tabpanel" aria-labelledby="t-g2" hidden>
+    <div class="gi">
+      <h3>Rompecabezas</h3>
+      <p>Desliza las piezas hasta armar la imagen. Al terminar, descubres quién o qué es.</p>
+      <div class="seg mini" id="pzTabs" role="tablist" aria-label="Elegir imagen"></div>
+      <div class="hudg" style="margin-top:16px"><span><b id="g2m">0</b>movimientos</span></div>
+      <div style="display:flex;gap:8px;margin-top:14px;flex-wrap:wrap"><button class="btn ghost" type="button" id="pzMix">Mezclar</button><button class="btn ghost" type="button" id="pzPeek">Ver modelo</button></div>
+    </div>
+    <div class="pz-wrap">
+      <div class="pz" id="pz" role="group" aria-label="Rompecabezas de 3 por 3"></div>
+      <div class="fb" id="g2fb" aria-live="polite">Toca una pieza al lado del hueco para moverla.</div>
+    </div>
+  </div>
+
+  <!-- Juego C: Ordena la historia -->
+  <div class="gp" id="p-g3" role="tabpanel" aria-labelledby="t-g3" hidden>
+    <div class="gi">
+      <h3>Ordena la historia</h3>
+      <p>Los hitos llegaron mezclados. Toca uno y luego otro para cambiarlos de lugar. Cuando creas que está, comprueba.</p>
+      <div class="seg mini" role="tablist" aria-label="Elegir historia" id="ordTabs">
+        <button type="button" role="tab" data-k="drew" aria-selected="true">Charles Drew</button>
+        <button type="button" role="tab" data-k="brown" aria-selected="false">Marie Brown</button>
+      </div>
+    </div>
+    <div class="orden">
+      <ol class="ol" id="ol"></ol>
+      <div class="ctr"><button class="btn" type="button" id="ordCheck">Comprobar</button><button class="btn ghost" type="button" id="ordMix">Mezclar</button></div>
+      <div class="fb" id="g3fb" aria-live="polite">Toca dos hitos para intercambiarlos.</div>
+    </div>
+  </div>
+</section>
+
+
+<!-- 05 CIERRE -->
+<section class="end" id="cierre" data-c="rojo">
+  <p class="mono" style="color:var(--rojo)">05 · Cierre</p>
+  <h2 style="margin-top:8px">Hoy aprendiste <span class="r">dos</span> nombres. <span class="a">Faltan más.</span></h2>
+  <div class="end-grid">
+    <div class="qrbox">
+      <p class="mono">Escanea y juega en tu celular</p>
+      <div id="qr">Pega abajo el enlace de la web para crear el QR.</div>
+      <input id="qrUrl" type="url" placeholder="https://…" aria-label="Enlace de la web para el QR">
+    </div>
+    <div>
+      <p class="mono" style="margin-bottom:10px">Equipo</p>
+      <ul class="team"><li>Camilo Pinzón Mosquera</li><li>Angie Carolina Zuñiga</li></ul>
+      <p class="mono" style="margin:34px 0 4px">Bibliografía</p>
+      <ul class="refs">
+        <li>American Chemical Society. (s. f.). Charles Richard Drew. <a href="https://www.acs.org/education/whatischemistry/african-americans-in-sciences/charles-richard-drew.html">acs.org</a></li>
+        <li>Brown, M. V. B., &amp; Brown, A. L. (1969). Home security system utilizing television surveillance (US3482037A). <a href="https://patents.google.com/patent/US3482037A/en">Google Patents</a></li>
+        <li>Lemelson-MIT Program. (s. f.). Marie Van Brittan Brown. <a href="https://lemelson.mit.edu/resources/marie-van-brittan-brown">lemelson.mit.edu</a></li>
+        <li>Patel, K. B. et al. (2024). Charles R. Drew (1904–1950): A pioneer of blood banking. Cureus, 16(12), e76181. <a href="https://doi.org/10.7759/cureus.76181">doi.org/10.7759/cureus.76181</a></li>
+        <li>Princeton University, Center on Science and Technology. (s. f.). Marie van Brittan Brown. <a href="https://cst.princeton.edu/people/marie-van-brittan-brown">cst.princeton.edu</a></li>
+        <li>Science History Institute. (s. f.). Charles Richard Drew. <a href="https://www.sciencehistory.org/education/scientific-biographies/charles-richard-drew/">sciencehistory.org</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+</main>
+<div class="stripe" aria-hidden="true"></div>
+<footer><p class="mono">Historia y cultura del Pacífico colombiano · Parcial 3 · Aportes afro a la humanidad</p></footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
